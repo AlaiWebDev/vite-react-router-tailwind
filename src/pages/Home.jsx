@@ -1,28 +1,18 @@
 import Card from '../components/Card'
+import DatasService from '../services/DatasService'
 
 function Home({auteur}) {
-  const realisations = [
-    { title: "FreshFood",
-      description: "Site de vente…",
-      techno: "Site réalisé avec PHP et mySQL"
-    },
-    { title: "Restaurant Akira",
-      description: "Site de vente…",
-      techno: "Site réalisé avec WordPress"
-    },
-    { title: "Restaurant Akira",
-      description: "Site de vente…",
-      techno: "Site réalisé avec WordPress"
-    }
-
-]
+  const realisations = DatasService()
   return (
-    <div className="p-4">
+    <div className="w-2/3 p-4 m-auto">
       <h1 className="text-2xl font-bold mb-4">Bienvenue sur cette démonstration</h1>
       <h2>Développé par {auteur}</h2>
-      {realisations.map((realisation, index) => (
-          <Card key={index} real={realisation}/>
+      <section className='flex flex-row flex-wrap justify-center gap-8 my-8'>
+        {realisations.projects.map((project, index) => (
+          <Card key={index} real={project}/>
         ))}
+      </section>
+      
       {/* <Card title="Carte de test" description="Carte stylisée avec Tailwind CSS" /> */}
     </div>
   )

@@ -1,0 +1,34 @@
+{ 
+    "projects" :[
+        {   "title": "Fresh Food",
+            "description": "Site de vente de produits frais en ligne",
+            "techno": "Site réalisé avec PHP et mySQL",
+            "picture": "fresh-food.jpg"
+        },
+        {   "title": "Restaurant Akira",
+            "description": "Site de vente de produits frais en ligne",
+            "techno": "Site réalisé avec WordPress",
+            "picture": "restaurant-japonais.jpg"
+        },
+        {   "title": "Espace bien-être",
+            "description": "Site de vente de produits frais en ligne",
+            "techno": "Site réalisé avec LARAVEL",
+            "picture": "espace-bien-etre.jpg"
+        },
+        {   "title": "SEO",
+            "description": "Amélioration du référencement d'un site e-commerce",
+            "techno": "Utilisation des outils SEO",
+            "picture": "seo.jpg"
+        },
+        {   "title": "Création d'une API",
+            "description": "Création d'une API RESTFULL publique",
+            "techno": "PHP - SYMFONY",
+            "picture": "coder.jpg"
+        },
+        {   "title": "Maquette d'un site web",
+            "description": "Création du prototype d'un site",
+            "techno": "Réalisé avec FIGMA",
+            "picture": "screens.jpg"
+        }
+    ]
+}
