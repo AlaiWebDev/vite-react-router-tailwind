@@ -5,11 +5,12 @@ import NotFound from './pages/NotFound'
 import Header from './components/Header'
 
 function App() {
+  const author = "Jessica ROUX";
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home auteur={author} />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
