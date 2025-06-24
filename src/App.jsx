@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound'
 import Header from './components/Header'
 
 function App() {
-  const author = "Jessica ROUX";
+  const author = "Alain, mentor CEF";
   return (
     <BrowserRouter>
       <Header />
