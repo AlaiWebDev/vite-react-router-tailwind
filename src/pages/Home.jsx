@@ -1,4 +1,5 @@
 import Card from '../components/Card'
+import Modal from '../components/Modal'
 import DatasService from '../services/DatasService'
 function Home({auteur}) {
   const realisations = DatasService()
@@ -11,7 +12,7 @@ function Home({auteur}) {
           <Card real={project} />
         ))}
       </section>
-      
+      <Modal />
       {/* <Card title="Carte de test" description="Carte stylisée avec Tailwind CSS" /> */}
     </div>
   )
